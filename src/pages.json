@@ -1,16 +1,81 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "首页"
+      }
+    },
 		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+      "path": "pages/data/index",
+      "style": {
+        "navigationBarTitleText": "数据"
+      }
+    },
+		{
+      "path": "pages/shop/index",
+      "style": {
+        "navigationBarTitleText": "商城"
+      }
+    },
+		{
+      "path": "pages/user/index",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    },
+		{
+      "path": "pages/login/login",
+      "style": {
+        "navigationBarTitleText": "登录"
+      }
+    },
+    {
+      "path": "pages/login/register",
+      "style": {
+        "navigationBarTitleText": "注册"
+      }
+    }
+  ],
+  "tabBar": {
+    "color": "#929599",
+    "selectedColor": "#2F76DF",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/image/footer/home.png",
+        "selectedIconPath": "static/image/footer/home_active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/data/index",
+        "iconPath": "static/image/footer/data.png",
+        "selectedIconPath": "static/image/footer/data_active.png",
+        "text": "数据"
+      },
+      {
+        "pagePath": "pages/shop/index",
+        "iconPath": "static/image/footer/shop.png",
+        "selectedIconPath": "static/image/footer/shop_active.png",
+        "text": "商城"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "iconPath": "static/image/footer/user.png",
+        "selectedIconPath": "static/image/footer/user_active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "在这儿",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#FFFFFF",
+    "app-plus": {
+      "titleNView": false // 去掉APP、H5的顶部导航
+    }
+  }
 }
