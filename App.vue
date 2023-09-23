@@ -52,6 +52,6 @@ img,
 image,
 video,
 canvas{
-  display: block;
+  display: block !important;
 }
 </style>

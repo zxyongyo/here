@@ -9,6 +9,7 @@
         个人信息
       </view>
     </view>
+    <navigator url="/pages/login/login">登录</navigator>
   </view>
 </template>
 

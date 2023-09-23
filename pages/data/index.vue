@@ -203,7 +203,7 @@ const option = {
         margin-left: 10rpx;
         width: 22rpx;
         height: 12rpx;
-        background: url('static/image/data/expand.png') 0 0 / cover no-repeat;
+        background: url('../../static/image/data/expand.png') 0 0 / cover no-repeat;
       }
     }
 
@@ -299,7 +299,7 @@ const option = {
             display: block;
             width: 14rpx;
             height: 26rpx;
-            background: url('static/image/data/arrow-right.png') 0 0 / cover no-repeat;
+            background: url('../../static/image/data/arrow-right.png') 0 0 / cover no-repeat;
           }
         }
       }

@@ -3,7 +3,7 @@
     <view class="header">
       <view class="tool">
         <view class="loc">盛福源视频公共服务站</view>
-        <view>
+        <view class="icons">
           <image class="icon" src="/static/image/index/search.png" />
           <image class="icon" src="/static/image/index/scan.png" />
         </view>
@@ -161,6 +161,9 @@ const activeTabNum = ref(0)
 
 <style lang="scss">
 .container {
+  /* #ifdef APP */
+  padding-top: var(--status-bar-height);
+  /* #endif */
   padding-bottom: 30rpx;
   /* #ifdef H5 */
   min-height: calc(100vh - 50px);
@@ -185,15 +188,18 @@ const activeTabNum = ref(0)
           margin-left: 10rpx;
           width: 22rpx;
           height: 12rpx;
-          background: url('static/image/index/expand.png') 0 0 / cover no-repeat;
+          background: url('../../static/image/index/expand.png') 0 0 / cover no-repeat;
         }
       }
-      .icon {
-        margin-right: 32rpx;
-        width: 32rpx;
-        height: 32rpx;
-        &:last-child {
-          margin: 0;
+      .icons{
+        display: flex;
+        .icon {
+          margin-right: 32rpx;
+          width: 32rpx;
+          height: 32rpx;
+          &:last-child {
+            margin: 0;
+          }
         }
       }
     }
@@ -299,17 +305,17 @@ const activeTabNum = ref(0)
         }
       }
       .tab1 {
-        background-image: url('static/image/index/tab1.png');
+        background-image: url('../../static/image/index/tab1.png');
         &.active{
-          background-image: url('static/image/index/tab1_active.png');
+          background-image: url('../../static/image/index/tab1_active.png');
           transform: translateY(-16rpx);
         }
       }
       .tab2{
         right: 0;
-        background-image: url('static/image/index/tab2.png');
+        background-image: url('../../static/image/index/tab2.png');
         &.active{
-          background-image: url('static/image/index/tab2_active.png');
+          background-image: url('../../static/image/index/tab2_active.png');
           transform: translateY(-16rpx);
         }
       }
@@ -368,10 +374,10 @@ const activeTabNum = ref(0)
         }
       }
       .in{
-        background: url('static/image/index/in.png') 0 0 / cover no-repeat;
+        background: url('../../static/image/index/in.png') 0 0 / cover no-repeat;
       }
       .out{
-        background: url('static/image/index/out.png') 0 0 / cover no-repeat;
+        background: url('../../static/image/index/out.png') 0 0 / cover no-repeat;
       }
     }
 
